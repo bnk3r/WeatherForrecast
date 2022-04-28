@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="root_url">"https://api.openweathermap.org/data/2.5"</string>
+    <string name="url_forecast">/forecast</string>
+    <string name="param_id_paris">"?id=2988507"</string>
+    <string name="param_token">"&amp;APPID=8194ea842a9aef80a798c8ac0c320ec4"</string>
+
+</resources>
