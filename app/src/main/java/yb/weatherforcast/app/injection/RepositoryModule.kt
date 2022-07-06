@@ -7,7 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import yb.weatherforcast.controllers.repos.WeatherRepository
+import yb.weatherforcast.domain.repository.WeatherRepositoryImpl
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -17,8 +17,8 @@ object RepositoryModule {
     fun providesWeatherRepository(
         @ApplicationContext context: Context,
         requestQueue: RequestQueue
-    ) : WeatherRepository {
-        return WeatherRepository(context, requestQueue)
+    ) : WeatherRepositoryImpl {
+        return WeatherRepositoryImpl(context, requestQueue)
     }
 
 }

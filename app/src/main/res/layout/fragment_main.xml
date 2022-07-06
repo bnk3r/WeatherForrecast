@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".views.weather.MainFragment">
+    tools:context=".presentation.fragment_main.MainFragment">
 
     <include
         android:id="@+id/include_weather_header"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/include_weather_header">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/result"
+            android:id="@+id/result_list_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -37,8 +37,8 @@
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <include
-        android:id="@+id/network_issue_layout"
-        layout="@layout/network_issue"
+        android:id="@+id/error_layout"
+        layout="@layout/error_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:visibility="gone"
