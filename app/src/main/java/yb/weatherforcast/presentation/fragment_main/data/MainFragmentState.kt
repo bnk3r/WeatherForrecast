@@ -1,9 +1,8 @@
-package yb.weatherforcast.presentation.weather
+package yb.weatherforcast.presentation.fragment_main.data
 
 import android.view.View
 import yb.weatherforcast.data.data_source.WeatherDataSource
 import yb.weatherforcast.domain.model.BusinessDataState
-import yb.weatherforcast.domain.model.WeatherError
 
 data class MainFragmentState(
     val getWeatherState: BusinessDataState,
@@ -12,5 +11,7 @@ data class MainFragmentState(
     val currentTempText: String? = null,
     val currentTempIconUrl: String? = null,
     val nextFiveDays: List<WeatherDataSource.Day> = listOf(),
-    val getWeatherError: WeatherError? = null,
+    val getWeatherErrorIconId: Int? = null,
+    val getWeatherErrorTitleId: Int? = null,
+    val getWeatherErrorMessageId: Int? = null,
 )

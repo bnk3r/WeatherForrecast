@@ -1,4 +1,4 @@
-package yb.weatherforcast.domain.model
+package yb.weatherforcast.presentation.fragment_main.data
 
 data class WeatherMainAdapterDay(
     var day: String,
