@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
-    <string name="menu_refresh">Refresh</string>
+    <string name="menu_retry">Retry</string>
+
+    <string name="error_network_title">No network connection</string>
+    <string name="error_network_message">No internet connection. Connect to the internet and try again.</string>
+    <string name="error_computation_title">Something went wrong</string>
+    <string name="error_computation_message">Apparently something unexpected happened. Please retry later.</string>
+
+    <string name="search_hint">Search city</string>
+
+    <string name="current_temp">Current temperature</string>
     <string name="day">Day</string>
     <string name="min">Min</string>
     <string name="max">Max</string>
-    <string name="description">Description</string>
-    <string name="network_issue_title">No network connection</string>
-    <string name="network_issue_desc">No internet connection. Connect to the internet and try again</string>
-    <string name="search_hint">Search city</string>
-    <string name="current_temp">Temperature actuelle</string>
+
 </resources>
